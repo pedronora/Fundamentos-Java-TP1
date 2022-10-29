@@ -1,6 +1,6 @@
 # Instituto Infnet
 ## Fundamentos do Desenvolvimento Java
-## Prof.: Elberth Lins Costa de Moraes
-## Aluno: Pedro Nora
+Prof.: Elberth Lins Costa de Moraes
+Aluno: Pedro Nora
 
-### TP1
+TESTE DE PERFORMANCE 1 = TP1
