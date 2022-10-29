@@ -8,6 +8,7 @@ public class AppEscola {
     private static String[] alunos;
     private static float[] av1;
     private static float[] av2;
+    private static int pos;
 
     public static void main(String[] args) {
 
@@ -18,7 +19,7 @@ public class AppEscola {
         Scanner scan = new Scanner(System.in);
 
         String opcao;
-        int pos = 0;
+        pos = 0;
         do {
             System.out.println("\n\n[1] Registrar as notas de um novo aluno.");
             System.out.println("[2] Consultar boletim de um aluno.");
@@ -90,12 +91,11 @@ public class AppEscola {
     }
 
     private static void imprimir() {
-        for (int i = 0; i < TAMANHO; i++) {
-            if (alunos[i] != null) {
+        if (pos == 0) {
+            System.out.println("Ainda não há alunos cadastrados!");
+        } else {
+            for (int i = 0; i < pos; i++) {
                 imprimir(i);
-            } else if (i == 0) {
-                System.out.println("\t\nAinda não há alunos cadastrados!");
-                break;
             }
         }
     }
