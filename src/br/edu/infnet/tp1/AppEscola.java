@@ -93,7 +93,7 @@ public class AppEscola {
         for (int i = 0; i < TAMANHO; i++) {
             if (alunos[i] != null) {
                 imprimir(i);
-            } else {
+            } else if (i == 0) {
                 System.out.println("\t\nAinda não há alunos cadastrados!");
                 break;
             }
